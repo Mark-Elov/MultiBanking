@@ -28,6 +28,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import RotatedView from './RotatedView'
 
 const Stack = createStackNavigator();
 
@@ -52,6 +53,7 @@ const SecondScreen = ({navigation}) => {
         title="goBack"
         onPress={()=>navigation.goBack({id:14, message:"I'm from Second"})}
       />
+      <RotatedView/>
     </View>
 
     )
@@ -110,7 +112,7 @@ const SafeAreaViewComponent = ({navigation, route}) => {
     <Section title="Step One">
       Edit <Text style={styles.highlight}>App.js</Text> to change this
       screen and then come back to see your edits.
-      New message {message}
+      New message {message}]
     </Section>
     <Section title="See Your Changes">
       <ReloadInstructions />
